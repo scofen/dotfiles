@@ -1,4 +1,4 @@
-# Run this after ant updates through homebrew to save yourself some hassle
+# Run this after ant updates through homebrew to save yourself some hassle.
 
 # Ant env stuff
 VER_INFO=$(ant -version)
@@ -10,13 +10,14 @@ SFAPI=$(curl --silent "https://na55.salesforce.com/services/data" | python -m js
 SFAPI_VER=$(echo $SFAPI | cut -d '"' -f4)
 
 clear
+mkdir -p ~/.dotfiles/ant
 cd ~/.dotfiles/ant/
 echo "Ant version: "$ANT_VER
 echo "SF version: "$SFAPI_VER
 
 # Clear old junk files
 echo "Removing old jar...\c"
-ls | grep -v update_ant.sh | xargs rm -r #TODO: make this not so dangerous...
+ls | grep -v update_ant.sh | xargs rm -r
 echo " Removed!"
 
 # Download and unzip the latest version of the ant tool
@@ -24,7 +25,7 @@ echo "Downloading version $SFAPI_VER from Salesforce...\c"
 curl --silent https://gs0.salesforce.com/dwnld/SfdcAnt/salesforce_ant_$SFAPI_VER.zip > salesforce_ant_$SFAPI_VER.zip 
 echo " Download complete!"
 
-##echo "Extracting crap...\c"
+echo "Extracting crap...\c"
 unzip salesforce_ant_$SFAPI_VER.zip > /dev/null
 echo "Extracted!\n"
 
@@ -34,7 +35,7 @@ rm $ANT_DIR/libexec/lib/ant-salesforce.jar
 
 echo "Move jar to ant dir and cleaning current dir of various leftover crap..."
 mv ant-salesforce.jar /usr/local/Cellar/ant/$ANT_VER/libexec/lib/ant-salesforce.jar
-ls | grep -v update_ant.sh | grep -v ant-salesforce.jar | xargs rm -r #TODO: Make is less dangerous again.
+ls | grep -v update_ant.sh | grep -v ant-salesforce.jar | xargs rm -r
 echo "\nUpdate complete! Yay\n\n\n"
 
 echo "=================================================="
@@ -57,4 +58,3 @@ echo "              |_____|  / /_// __ \               ";
 echo "                      /___,'\/  \/               ";
 echo "                                                 ";
 echo "=================================================="
-
