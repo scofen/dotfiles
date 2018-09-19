@@ -12,6 +12,10 @@ SFAPI_VER=$(echo $SFAPI | cut -d '"' -f4)
 clear
 mkdir -p ~/.dotfiles/ant
 cd ~/.dotfiles/ant/
+if [ ${PWD##*/} != 'ant' ]; then 
+    exit 1
+fi
+
 echo "Ant version: "$ANT_VER
 echo "SF version: "$SFAPI_VER
 
