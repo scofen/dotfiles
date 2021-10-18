@@ -3,7 +3,7 @@ cask_args appdir: '/Applications'
 # Prerequisites for some of the apps
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
-brew 'java'
+brew 'java11'
 cask 'xquartz'
 
 # Stuff
@@ -50,7 +50,6 @@ cask 'gimp'
 cask 'google-drive-file-stream'
 cask 'inkscape'
 cask 'iterm2'
-cask 'lastpass'
 cask 'postman'
 cask 'qlcolorcode'
 cask 'qlimagesize'
