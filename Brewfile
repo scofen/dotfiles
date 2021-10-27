@@ -7,7 +7,6 @@ brew 'java11'
 cask 'xquartz'
 
 # Stuff
-brew 'archey'
 brew 'asciidoctor'
 brew 'coreutils'
 brew 'ffmpeg'
