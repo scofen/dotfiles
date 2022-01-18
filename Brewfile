@@ -14,7 +14,6 @@ brew 'ffmpeg'
 brew 'flac'
 brew 'freetype'
 brew 'gh'
-brew 'go'
 brew 'graphviz'
 brew 'grc'
 brew 'highlight'
@@ -37,18 +36,17 @@ brew 'npm'
 brew 'pipx'
 brew 'pmd'
 brew 'pyenv'
-brew 'rainbarf'
 brew 'readline'
 brew 'spark'
 brew 'tmux'
 brew 'watch'
-brew 'weechat'
 brew 'yarn'
 
 # More stuff
 cask 'aerial'
 cask 'alfred'
 cask 'brave-browser'
+cask 'discord'
 cask 'homebrew/cask/dash'
 cask 'gimp'
 cask 'google-drive-file-stream'
@@ -72,3 +70,4 @@ cask 'webpquicklook'
 
 # Mac App Store items
 mas 'RadarScope', id: 432027450
+mas 'LastPass', id: 926036361
