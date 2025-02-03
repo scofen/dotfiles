@@ -8,7 +8,6 @@ cask 'xquartz'
 
 # Stuff
 brew 'asciidoctor'
-brew 'azure-cli'
 brew 'coreutils'
 brew 'ffmpeg'
 brew 'flac'
@@ -46,7 +45,6 @@ brew 'yarn'
 cask 'aerial'
 cask 'alfred'
 cask 'brave-browser'
-cask 'discord'
 cask 'homebrew/cask/dash'
 cask 'gimp'
 cask 'google-drive-file-stream'
@@ -69,6 +67,7 @@ cask 'slack'
 cask 'sourcetree'
 cask 'spotify'
 cask 'visual-studio-code'
+cask 'intellij-idea-ce'
 cask 'webpquicklook'
 
 # Mac App Store items
