@@ -71,5 +71,4 @@ cask 'intellij-idea-ce'
 cask 'webpquicklook'
 
 # Mac App Store items
-mas 'RadarScope', id: 432027450
 mas 'LastPass', id: 926036361
